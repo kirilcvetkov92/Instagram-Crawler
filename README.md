@@ -2,7 +2,7 @@
 This project we cover several segments of data collection on Instagram and their presentation 
 
 * Python script solution that captures/craws data from Instagram.
-* Inserting the collected instagram profile information in the database. 
+* Inserting the collected Instagram profile information in the database. 
 * View and filter the data on a simple WEB site in Django Framemwork.
 * Practical application
 
@@ -47,10 +47,10 @@ Enter the fields that are required.
   
 
 ## INSTRUCTIONS FOR USING THE CRAWL SCRIPT
-Using the script to collect data is too simple, here is the full api with which you can serve.
+Using the script to collect data is too simple, here is the full API with which you can serve.
 
-***Warning! Before you start using any kind of service from the crawler, you must configure the authentication instagram user 
-that will be used for crawling the data which is visible only for autheticated users***
+***Warning! Before you start using any kind of service from the crawler, you must configure the authentication Instagram user 
+that will be used for crawling the data which is visible only for authenticated users***
 
 * Go to Project / script / settings.py
 * Change Authentication info 
@@ -66,7 +66,7 @@ crawl.py [-db EXPORT_DB] [-DIR DIRECTORY] [-page PAGE_NAME] [-more MORE_DETAILS]
 * [-db EXPORT_DB] Whether to save data in a database or only in a file system
 * [-DIR DIRECTORY]: Directory where the data will be stored
 * [-page PAGE_NAME]: Profile / crawling page
-* [-more MORE_DETAILS]: Retrieve more details, such as number of likes, description of pictures within a single photo
+* [-more MORE_DETAILS]: Retrieve more details, such as a number of likes, description of pictures within a single photo
 ```
 
 ### Example 
@@ -74,6 +74,24 @@ First go to the directory where the script is located
 
  ```cd * PATH * / Project / script```
 
-In order to run the script, and to crawl the data Bill Gates's page :) , please type :
+In order to run the script, and to crawl the data from Bill Gates's page :) , please type :
 
 ```python crawl.py -num = 30 -page = thisisbillgates -more -db```
+
+## Web features
+You can see all the pages that are indexed by our searcher
+
+* You can filter images that contain a keyword on the page name or you can search by keywords contained in their description 
+* You can click a specific image and list it in a gallery
+* You can modify the data through the administration panel To access the admin section, type the following URL
+
+  ***localhost:8000/admin***
+  
+### Visualization
+![Web page features]('/documentation/web.png')
+
+## Usage
+The biggest usage on such a defined and implemented architecture is that data retrieval can bring us enormous power today, especially in the field of ***Big Data***, ***Deep Learning*** and other ***Machine Learning algorithms***.
+If we search for images with certain hashtags, then the system gives us images that logically contain the same hashtag. We can only imagine how Instagram uses hashtags to train a system to recognize various events, objects, events, articles, models in real time.
+But with this script, all this information is available to us if we know how to take them. Web browsers and Web retrieval is a powerful capability that every developer and business analyst needs to have.
+
