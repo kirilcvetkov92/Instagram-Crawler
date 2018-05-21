@@ -1,5 +1,10 @@
 # Instagram-Crawler
-This project we cover several segments of data collection on Instagram and their presentation 1. Python scrip solution that captures/craws data from Instagram. 2. Enter the collected instagram profile information in the database. 3. View and filter the data on a simple WEB site in Django Framemwork. 4. Practical application
+This project we cover several segments of data collection on Instagram and their presentation 
+
+* Python script solution that captures/craws data from Instagram.
+* Inserting the collected instagram profile information in the database. 
+* View and filter the data on a simple WEB site in Django Framemwork.
+* Practical application
 
 ## INSTALLATION REQUIREMENTS
  
