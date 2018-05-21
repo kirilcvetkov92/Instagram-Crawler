@@ -11,12 +11,12 @@ This project we cover several segments of data collection on Instagram and their
 * Install Python 3.6.0
 * Install the Pip Package, type in the command line:
   
-  ***python get-pip.py***
+  ```python get-pip.py```
 * Install Pip requests (This will install Django and Selenium frames)
   
-  ***cd * PATH * / Project*** 
+  ```cd * PATH * / Project```
   
-  ***pip install -r requirements.txt***
+  ```pip install -r requirements.txt```
 * Install Firefox Client (you can download the famous Mozilla Firefox browser)
 * Completed
 
@@ -25,7 +25,7 @@ This project we cover several segments of data collection on Instagram and their
 ## SETTING UP THE WEB SYSTEM
 * If you want to use the web system, then you need to deploy the entire Django system in the database. We do this with the following code:
 
-  ***cd * PATH * / Project / web. / manage.py makemigrations***
+  ```cd * PATH * / Project / web. / manage.py makemigrations```
 
 This will perform the migrations from the model. /manage.py migrate Convert migrations from a model to a base
 
@@ -36,13 +36,13 @@ This will perform the migrations from the model. /manage.py migrate Convert migr
   
 * To create a Super Administrator who has all the privileges, type:
 
-  ***./manage.py createsuperuser***
+  ```./manage.py createsuperuser```
 
 Enter the fields that are required.
 
 * To turn on the server, run the following command and activate the Django Web application at port 8000
 
-  ***./manage.py runserver 8000***
+  ```./manage.py runserver 8000```
   
   
 
@@ -68,3 +68,12 @@ crawl.py [-db EXPORT_DB] [-DIR DIRECTORY] [-page PAGE_NAME] [-more MORE_DETAILS]
 * [-page PAGE_NAME]: Profile / crawling page
 * [-more MORE_DETAILS]: Retrieve more details, such as number of likes, description of pictures within a single photo
 ```
+
+### Example 
+First go to the directory where the script is located
+
+ ```cd * PATH * / Project / script```
+
+In order to run the script, and to crawl the data Bill Gates's page :) , please type :
+
+```python crawl.py -num = 30 -page = thisisbillgates -more -db```
