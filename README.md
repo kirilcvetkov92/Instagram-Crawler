@@ -88,7 +88,7 @@ You can see all the pages that are indexed by our searcher
   ***localhost:8000/admin***
   
 ### Visualization
-![Web page features]('/documentation/web.png')
+![Web page features](documentation/web.png)
 
 ## Usage
 The biggest usage on such a defined and implemented architecture is that data retrieval can bring us enormous power today, especially in the field of ***Big Data***, ***Deep Learning*** and other ***Machine Learning algorithms***.
