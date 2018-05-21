@@ -1,0 +1,105 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Инстаграм профили - Изработено од дарко дивјаковски</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "/design/album.css" %}" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 py-4">
+                <h4 class="text-white">Пребарување</h4>
+                <p class="text-muted">Пребарувај слики по клучен збор на име на профил или вклучен збор во описот на
+                    сликата</p>
+                <p class="text-muted">
+                <form type="get" action="/instagram/search/." style="margin: 0" accept-charset="utf-8">
+                    <input id="search_box" type="text" name="search_box" placeholder="Пребарај...">
+                    <button id="search_submit" type="submit">Submit</button>
+                </form>
+                </p>
+
+            </div>
+            <div class="col-sm-4 py-4">
+                <h4 class="text-white">Контакт</h4>
+                <ul class="list-unstyled">
+                    <li><a href="http://www.facebook.com/darko.divjakovski" class="text-white">Facebook</a></li>
+                    <li><a href="http://www.instagram.com/darko.divjakovski" class="text-white">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+        <a href="/instagram" class="navbar-brand">Instagram aлбум на корисници</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Приказ : </h1>
+        <p class="lead text-muted">{% block title %}Најнови Instagram страници {% endblock %}</p>
+    </div>
+</section>
+
+<div class="album text-muted">
+    <div class="container">
+        <div class="row">
+            {% block elements %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+            <a href="#">Оди најгоре</a>
+        </p>
+        <p>Оваа веб страна е направена како дипломски труд од страна на <b>Дарко Дивјаковски</b> во рамките на &copy;<b>ФОН
+            Универзитет</b>! </p>
+        <p>Сите права се задржани</p>
+
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="http://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+<script src="http://getbootstrap.com/dassets/js/vendor/holder.min.js"></script>
+<script>
+    $(function () {
+        Holder.addTheme("thumb", {background: "#55595c", foreground: "#eceeef", text: "Thumbnail"});
+    });
+</script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

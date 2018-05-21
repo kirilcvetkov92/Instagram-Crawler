@@ -1,0 +1,45 @@
+{% load static %}
+{% static "" as baseUrl %}
+
+{% if pages %}
+    {% for page in pages %}
+        <div align="center" class="card">
+            <a href="{% url 'instagram-page'  page.page_name %}">
+                <img width="200" height="200" src="{{ baseUrl }}{{ page.page_name }}/{{ page.thumb_directory }}"
+                     alt="Card image cap"></a>
+
+            {{ page }}
+
+            <div class="container">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#info{{ page.pk }}">Page
+                    Info
+                </button>
+                <div id="info{{ page.pk }}" class="collapse in">
+                    {% if page.followers %}
+                        <p class="card-text">
+                            <b>Followers : </b>{{ page.followers }}</p>
+                    {% endif %}
+                    {% if page.following %}
+                        <p class="card-text">
+                            <b>Following : </b>{{ page.following }}
+                        </p>
+                    {% endif %}
+                    <p class="card-text">
+                        <b>Posts : </b>{{ page.posts }}
+                    </p>
+                    <p class="card-text">
+                        <b>Date Created : </b>{{ page.date_created }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% else %}
+    <section class="jumbotron text-center">
+        <div>
+            Сеуште нема постови во оваа секција, обидете се да соберете податоци преку стартување на crawling скриптата
+            и обидете се повторно!
+        </div>
+    </section>
+{% endif %}

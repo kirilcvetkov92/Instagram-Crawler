@@ -1,0 +1,21 @@
+{% extends 'instagram/base.html' %}
+{% load staticfiles %}
+{% load page_extras %}
+
+{% block title %}
+    {% if search %}
+        Резултати од пребарувањето : {{ keyword }}
+    {% else %}
+        Инстаграм страница : {{ page.get_page_name }}
+    {% endif %}
+{% endblock %}
+
+
+{% block elements %}
+    {% if search %}
+        {% search_post keyword %}
+    {% else %}
+        {% get_post_list page %}
+    {% endif %}
+{% endblock %}
+

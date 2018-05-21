@@ -1,0 +1,2 @@
+selenium==3.4.1
+Djanlgo==1.11
