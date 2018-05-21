@@ -1,6 +1,6 @@
 """ Settings that keeps pattners which the crawler will search for, in order to make an action"""
 """Authentication info"""
-username = "darko.divjakovski"
+username = "kiril_cvetkov"
 password = "********"
 
 """ MAIN SETTINGS """
