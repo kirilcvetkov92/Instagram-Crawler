@@ -38,3 +38,28 @@ Enter the fields that are required.
 * To turn on the server, run the following command and activate the Django Web application at port 8000
 
   ***./manage.py runserver 8000***
+  
+  
+
+## INSTRUCTIONS FOR USING THE CRAWL SCRIPT
+Using the script to collect data is too simple, here is the full api with which you can serve.
+
+***Warning! Before you start using any kind of service from the crawler, you must configure the authentication instagram user 
+that will be used for crawling the data which is visible only for autheticated users***
+
+* Go to Project / script / settings.py
+* Change Authentication info 
+
+  ***Default is : username = "kiril_cvetkov" password = "*******"***
+* Enter your username and password through which the browser will log in.
+ 
+Once we have configured our sniffer, Below is the full API as well as an example to give a complete picture of how the script can be used
+
+```
+crawl.py [-db EXPORT_DB] [-DIR DIRECTORY] [-page PAGE_NAME] [-more MORE_DETAILS] [-num POST_NUMBER]
+ 
+* [-db EXPORT_DB] Whether to save data in a database or only in a file system
+* [-DIR DIRECTORY]: Directory where the data will be stored
+* [-page PAGE_NAME]: Profile / crawling page
+* [-more MORE_DETAILS]: Retrieve more details, such as number of likes, description of pictures within a single photo
+```
