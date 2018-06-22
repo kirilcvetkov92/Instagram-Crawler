@@ -93,5 +93,5 @@ You can see all the pages that are indexed by our searcher
 ## Usage
 The biggest usage on such a defined and implemented architecture is that data retrieval can bring us enormous power today, especially in the field of ***Big Data***, ***Deep Learning*** and other ***Machine Learning algorithms***.
 If we search for images with certain hashtags, then the system gives us images that logically contain the same hashtag. We can only imagine how Instagram uses hashtags to train a system to recognize various events, objects, events, articles, models in real time.
-But with this script, all this information is available to us if we know how to take them. Web browsers and Web retrieval is a powerful capability that every developer and business analyst needs to have.
+But with the usage of this script, all information is available to us if we know how to take them. Web browsers and Web retrieval is a powerful capability that every developer and business analyst needs to have.
 
